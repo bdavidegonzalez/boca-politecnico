@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+  <title>Home</title>
+</head>
+<body>
+    <nav>
+        <img src="./img/icons/icon_menu.svg" alt="menu" class="menu">
+        <div class="navbar-left">
+            <img src="./img/logos/logo.png" alt="logo" class="logo">
+            <ul>
+                <li>
+                  <a href="/">Dashboard</a>
+                </li>
+              </ul>
+
+        </div>
+
+        <div class="navbar-right">
+            <ul>
+                <li class="navbar-alert">
+                    <img src="./img/icons/user-icon-svgrepo-com.png" alt="shopping cart">
+                    <div>2</div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+  <div class="menu">
+    <ul>
+      <li>
+        <a href="/">Home</a>
+      </li>
+      <li>
+        <a href="/">runs</a>
+      </li>
+      <li>
+        <a href="/">score</a>
+      </li>
+      <li>
+        <a href="/">users</a>
+      </li>
+      <li>
+        <a href="/">problems</a>
+      </li>
+      <li>
+        <a href="/">answer</a>
+      </li>
+      <li>
+        <a href="/">task</a>
+      </li>
+      <li>
+        <a href="/">reports</a>
+      </li>
+    </ul>
+
+    <ul>
+      <li>
+        <a href="/login.html" class="sign-out">Cerrar Sesión</a>
+      </li>
+    </ul>
+  </div>
+
+  <section class="main-container">
+
+    <button id="myBtn" class="secondary-button signup-button">Crear Equipo</button> 
+
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+            
+        <div class="login-title">
+          <h1>Equipo</h1>
+        </div>
+
+        <form action="/" class="form">
+          <label for="email" class="label">Correo Electronico</label>
+          <input type="text" id="email" placeholder="test@example.com" class="input input-email">
+
+          <label for="name" class="label">Nombre del equipo</label>
+          <input type="text" id="name" placeholder="Carlos arturo" class="input input-email">
+
+          <label for="logo" class="label">Logo</label>
+          <input type="file" id="logo" placeholder="Carlos arturo" class="input input-email">
+
+          <input type="submit" value="Guardar" class="primary-button login-button">
+          
+        </form>
+      </div>
+    </div>
+
+    <div class="table-users">
+
+      <table>
+        <colgroup span="4" class="columns"></colgroup>
+        <tr>
+          <td>Id</td>
+          <td>Nombre</td>
+          <td>Logo</td>
+          <td>Opciones</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>equipo #1</td>
+          <td> <img src="./img/icons/user-icon-svgrepo-com.png" alt="shopping cart"></td>
+          <td>editar/Eliminar</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>equipo #2</td>
+          <td> <img src="./img/icons/user-icon-svgrepo-com.png" alt="shopping cart"></td>
+          <td>editar/Eliminar</td>
+        </tr>
+      </table>
+    </div>
+
+  </section>
+  
+</body>
+  <script src="./js/modal.js"></script>
+</html>
+
+
+
+
+
+
+
+
