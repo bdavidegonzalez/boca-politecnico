@@ -1,0 +1,10 @@
+.main-container-user {
+    display: grid;
+    grid-template-rows: auto 0fr auto;
+    width: 100%;
+}
+
+.table-users {
+    display: contents;
+    text-align: center;
+}

@@ -3,6 +3,8 @@
 @import './home.css';
 @import './menu.css';
 @import './modal.css';
+@import './user.css';
+@import './chart.css';
 @import './404.css';
 
 :root{
@@ -22,4 +24,9 @@
 body{
     font-family: 'Quicksand', sans-serif;
     margin: 0;
+}
+
+.main-home {
+    display: flex;
+    justify-content: space-around;
 }

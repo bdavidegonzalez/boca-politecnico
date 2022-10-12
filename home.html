@@ -71,59 +71,59 @@
         </div>
         <section class="main-container-user">
 
-          <button id="myBtn" class="secondary-button signup-button">Crear Equipo</button> 
-      
-          <div id="myModal" class="modal">
-            <div class="modal-content">
-              <span class="close">&times;</span>
-                  
-              <div class="login-title">
-                <h1>Equipo</h1>
-              </div>
-      
-              <form action="/" class="form">
-                <label for="email" class="label">Correo Electronico</label>
-                <input type="text" id="email" placeholder="test@example.com" class="input input-email">
-      
-                <label for="name" class="label">Nombre del equipo</label>
-                <input type="text" id="name" placeholder="Carlos arturo" class="input input-email">
-      
-                <label for="logo" class="label">Logo</label>
-                <input type="file" id="logo" placeholder="Carlos arturo" class="input input-email">
-      
-                <input type="submit" value="Guardar" class="primary-button login-button">
+          <section class="main-container-home">
+            <div class="cards-container">
+  
+    
+                <div class="card">
+                    <div class="card-info">
+                        <div>
+                            <p>2000</p>
+                            <p>Usuarios</p>
+                        </div>
+                        <figure>
+                            <img src="./img/icons/user-icon-svgrepo-com.png" alt="">
+                        </figure>
+                    </div>
+                </div>
+
                 
-              </form>
+                <div class="card">
+                  <div class="card-info">
+                      <div>
+                          <p>$1.500.000</p>
+                          <p>ingresos</p>
+                      </div>
+                      <figure>
+                          <img src="./img/icons/user-icon-svgrepo-com.png" alt="">
+                      </figure>
+                  </div>
+              </div>
+
+              
+              <div class="card">
+                <div class="card-info">
+                    <div>
+                        <p>70%</p>
+                        <p>transaciones</p>
+                    </div>
+                    <figure>
+                        <img src="./img/icons/user-icon-svgrepo-com.png" alt="">
+                    </figure>
+                </div>
             </div>
-          </div>
-      
-          <div class="table-users">
-      
-            <table>
-              <colgroup span="4" class="columns"></colgroup>
-              <tr>
-                <td>Id</td>
-                <td>Nombre</td>
-                <td>Logo</td>
-                <td>Opciones</td>
-              </tr>
-              <tr>
-                <td>1</td>
-                <td>equipo #1</td>
-                <td> <img src="./img/icons/user-icon-svgrepo-com.png" alt="shopping cart"></td>
-                <td>editar/Eliminar</td>
-              </tr>
-              <tr>
-                <td>2</td>
-                <td>equipo #2</td>
-                <td> <img src="./img/icons/user-icon-svgrepo-com.png" alt="shopping cart"></td>
-                <td>editar/Eliminar</td>
-              </tr>
-            </table>
-          </div>
-      
+           
+            </div>
+            
+            <div class="chart-container">
+              <h1>Estadisticas</h1>
+              <canvas id="grafica"></canvas>
+            </div>
         </section>
+        </section>
+    
       </div>
+     
     </div>
 
 
@@ -131,6 +131,8 @@
   
 </body>
   <script src="./js/modal.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@latest/dist/Chart.min.js"></script>
+  <script src="js/chart.js"></script>
 </html>
 
 
